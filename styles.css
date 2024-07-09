@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    margin: 0;
+    background: linear-gradient(180deg, #35375a, #3ebbb5);
+    font-family: 'Arial', sans-serif;
+    animation: background-fade 2s ease-in-out;
+}
+
+@keyframes background-fade {
+    0% {
+        background: linear-gradient(180deg, #35375a, #3ebbb5);
+    }
+    100% {
+        background: linear-gradient(180deg, #35375a, #3ebbb5);
+    }
+}
+
+.calculator {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 40px;
+    box-shadow: 0 10px 100px 10px rgba(0, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    animation: calculator-fade 3s ease-in-out;
+}
+
+@keyframes calculator-fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 2;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    color: #0ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s ease-in-out;
+}
+
+input:focus {
+    background-color: rgba(0, 255, 255, 0.9);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+button {
+    background-color: #0ff;
+    color: #000;
+    border: none;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a6ba1;
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+td {
+    width: 25%;
+}
